@@ -3,7 +3,7 @@
   height: 80px;
   display: flex;
   justify-content: space-between;
-  
+  user-select: none;
   border-bottom: 1px solid white;
   h1{
     font-size: 30px;
@@ -51,6 +51,7 @@
     cursor: pointer;
     width: 30px;
     height: 30px;
+    -webkit-tap-highlight-color: transparent;
   }
   img:nth-of-type(1) {
     transition: transform 0.3s ease;
@@ -101,7 +102,7 @@
 @media screen and (min-width: 360px) and (max-width: 768px) {
   .Header {
     
-    height: 80px;
+    height: 60px;
     h1{
      display: none;
     }
@@ -129,7 +130,7 @@
 @media screen and (max-width: 360px) {
   .Header {
     
-    height: 80px;
+    height: 60px;
     h1{
       display: none;
      }
