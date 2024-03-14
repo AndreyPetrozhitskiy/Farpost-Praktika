@@ -1,4 +1,4 @@
-import React from 'react';
+// import React from 'react';
 import "../Styles/Main.scss"
 import Header from './Header';
 
