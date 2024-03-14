@@ -1,0 +1,27 @@
+.Main {
+  width: 100%;
+  border: 1px solid #ffffff;
+  height: auto;
+  padding: 10px;
+  color: #ffffff;
+  h1{
+    width: 100%;
+    text-align: center;
+    font-size: 40px;
+  }
+}
+
+@media screen and (min-width: 1301px) {
+}
+
+@media screen and (min-width: 1000px) and (max-width: 1200px) {
+}
+
+@media screen and (min-width: 768px) and (max-width: 1000px) {
+}
+
+@media screen and (min-width: 360px) and (max-width: 768px) {
+}
+
+@media screen and (max-width: 360px) {
+}
