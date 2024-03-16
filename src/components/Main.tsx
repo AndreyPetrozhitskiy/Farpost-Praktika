@@ -1,12 +1,18 @@
 // import React from 'react';
 import "../Styles/Main.scss"
-import Header from './Header';
+import Filtres from "./Filtres";
+
 
 function Main() {
   return (
     <div className = "Main">
-       <Header />
        <h1>Задачи</h1>
+      <div className="Container">
+        <Filtres />
+        <div className="Container__tasks">
+          GGGGGGGGGGGGGGGGGGGGGGGGGGG
+        </div>
+      </div>
     </div>
   );
 }

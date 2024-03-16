@@ -1,8 +1,8 @@
 .Main {
   width: 100%;
- 
+
   height: auto;
-  padding: 10px;
+ 
   color: #ffffff;
   h1{
     width: 100%;
@@ -10,7 +10,20 @@
     font-size: 40px;
   }
 }
-
+.Container{
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 2%;
+  
+  &__tasks{
+    width: 69%;
+    height: 100px;
+    color: white;
+  }
+}
 @media screen and (min-width: 1301px) {
 }
 

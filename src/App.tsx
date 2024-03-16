@@ -1,16 +1,11 @@
-import Main from "./components/Main";
-
-
-
-
-
-
-
+import AppRouter from "./AppRouter";
+import Header from "./components/Header";
 
 function App() {
   return (
     <div className="App">
-      <Main />
+      <Header />
+      <AppRouter />
     </div>
   );
 }
