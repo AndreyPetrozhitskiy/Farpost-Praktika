@@ -2,26 +2,48 @@
   width: 100%;
 
   height: auto;
- 
+
   color: #ffffff;
-  h1{
+  h1 {
     width: 100%;
     text-align: center;
     font-size: 40px;
   }
 }
-.Container{
+.Container {
   width: 100%;
   height: auto;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   margin-top: 2%;
-  
-  &__tasks{
+
+  &__tasks {
     width: 69%;
-    height: 100px;
+    
     color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    button {
+      width: 200px;
+      height: 60px;
+      background-color: #294f74;
+      border-radius: 10px;
+      text-align: center;
+      font-size: 20px;
+      color: white;
+      border: none;
+      margin-bottom: 3%;
+      cursor: pointer;
+
+      &:hover {
+        color: black;
+        background-color: #ffffff;
+        border: 2px solid #437fb1;
+      }
+    }
   }
 }
 @media screen and (min-width: 1301px) {
@@ -34,7 +56,79 @@
 }
 
 @media screen and (min-width: 360px) and (max-width: 768px) {
+  .Container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 2%;
+  
+    &__tasks {
+      width: 100%;
+      
+      color: white;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      button {
+        width: 200px;
+        height: 60px;
+        background-color: #294f74;
+        border-radius: 10px;
+        text-align: center;
+        font-size: 20px;
+        color: white;
+        border: none;
+        margin-bottom: 3%;
+        cursor: pointer;
+  
+        &:hover {
+          color: black;
+          background-color: #ffffff;
+          border: 2px solid #437fb1;
+        }
+      }
+    }
+  }
 }
 
 @media screen and (max-width: 360px) {
+  .Container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 2%;
+  
+    &__tasks {
+      width: 100%;
+      
+      color: white;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      button {
+        width: 200px;
+        height: 60px;
+        background-color: #294f74;
+        border-radius: 10px;
+        text-align: center;
+        font-size: 20px;
+        color: white;
+        border: none;
+        margin-bottom: 3%;
+        cursor: pointer;
+  
+        &:hover {
+          color: black;
+          background-color: #ffffff;
+          border: 2px solid #437fb1;
+        }
+      }
+    }
+  }
 }
