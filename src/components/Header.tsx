@@ -1,4 +1,4 @@
-import  { useState } from 'react';
+
 import '../Styles/header.scss'
 function Header(props: { handleBurgerClick: () => void, burgerIcon: string, userIcon: string, isRotated: boolean }) {
   return (
