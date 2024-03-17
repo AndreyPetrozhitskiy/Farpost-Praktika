@@ -65,7 +65,7 @@ const Data = [
     Mark: ["Study"],
   },
 ];
-function Main(props: { handleBurgerClick: () => void, burgerIcon: string, userIcon: string, isRotated: boolean, }) {
+function Main(props: { handleBurgerClick: () => void,  isRotated: boolean, }) {
   
   return (
     <div className="Main">
