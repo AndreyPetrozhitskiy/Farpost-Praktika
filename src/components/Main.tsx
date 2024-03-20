@@ -1,13 +1,13 @@
 import "../Styles/Main.scss";
 import Filtres from "./Filtres";
 import Task from "./Task";
-
+import { Link } from "react-router-dom";
 const Data:any = [
   {
     Name: "Сделать уроки",
     DataCration: "17.03.2024",
-    Priority: "Low",
-    Mark: ["Study"],
+    Priority: ["Low","Medium","High"],
+    Mark: [" Study"," Study"," Study"," Study"," Study"],
     Description: "Подробное описание задачи",
   },
   {
@@ -82,12 +82,14 @@ function Main(props: { handleBurgerClick: () => void; isRotated: boolean }) {
       <div className="Container">
         <Filtres handleBurgerClick={props.handleBurgerClick} />
         <div className="Container__tasks">
-          <button>Добавить задачу</button>
+          <button> <Link to={`/new/`}
+            style={{ textDecoration: "none", color: "inherit" }}>Добавить задачу </Link></button>
           {Data.length === 0 ? (
             <p className="Container__tasks-none">Задач нет</p>
           ) : (
             Data.map((item:any, itemIndex:any) => (
               <Task
+                Id={itemIndex}
                 key={itemIndex}
                 Name={item.Name}
                 Date={item.DataCration}

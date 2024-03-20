@@ -1,28 +1,26 @@
 import "../Styles/Task.scss";
-import { NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 function Task(props: {
+  Id: number;
   Name: string;
   Date: string;
-  Priority: string;
+  Priority: string[];
   Mark: string[];
   Description: string;
 }) {
   return (
-    <NavLink
-      className="Task"
-      to={
-        {
-          pathname: "/view",
-          state: {
-            Name: props.Name,
-            Date: props.Date,
-            Priority: props.Priority,
-            Mark: props.Mark,
-            Description: props.Description,
-          },
-        } as any
-      }
-    >
+    <Link 
+    className="Task"
+  to={`/view/${props.Id}`}
+  state={{
+    Id: props.Id,
+    Name: props.Name,
+    Date: props.Date,
+    Priority: props.Priority,
+    Mark: props.Mark,
+    Description: props.Description,
+  }}
+>
       <div className="Task__Info">
         <h1>{props.Name}</h1>
         <p>Дата создания: {props.Date}</p>
@@ -31,17 +29,25 @@ function Task(props: {
       </div>
       <div className="Task__Buttons">
         <button>
-          <NavLink to="/" style={{ textDecoration: "none", color: "inherit" }}>
+          <Link to={`/edit/${props.Id}`}
+            state={{
+              Id: props.Id,
+              Name: props.Name,
+              Date: props.Date,
+              Priority: props.Priority,
+              Mark: props.Mark,
+              Description: props.Description,
+            }} style={{ textDecoration: "none", color: "inherit" }}>
             Редактировать
-          </NavLink>
+          </Link>
         </button>
         <button>
-          <NavLink to="/" style={{ textDecoration: "none", color: "inherit" }}>
+          <Link to="/" style={{ textDecoration: "none", color: "inherit" }}>
             Удалить
-          </NavLink>
+          </Link>
         </button>
       </div>
-    </NavLink>
+    </Link>
   );
 }
 

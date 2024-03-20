@@ -82,6 +82,7 @@
 @media screen and (min-width: 768px) and (max-width: 1000px) {
   .Header {
     height: 50px;
+    
   }
   .Exit__block {
     width: 100px;
@@ -101,15 +102,16 @@
 
 @media screen and (min-width: 360px) and (max-width: 768px) {
   .Header {
-    
+    -webkit-tap-highlight-color: transparent;
     height: 60px;
     h1{
-     display: none;
+      width: 400px;
+     display: block;
     }
     
   }
   .Exit__block {
-    width: 100%;
+    width: auto;
     height: 30px;
     background-color: #06090e;
     justify-content: space-between;
@@ -129,14 +131,15 @@
 
 @media screen and (max-width: 360px) {
   .Header {
-    
+    -webkit-tap-highlight-color: transparent;
     height: 60px;
     h1{
-      display: none;
-     }
+      width: 300px;
+     display: block;
+    }
   }
   .Exit__block {
-    width: 100%;
+    width: auto;
     height: 30px;
     background-color: #06090e;
     justify-content: space-between;

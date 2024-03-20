@@ -1,6 +1,6 @@
 $background-color: #06090e;
 // @media screen and (min-width: 1301px) {
-
+  // -webkit-tap-highlight-color: transparent;
 // }
 
 // @media screen and (min-width: 1000px) and (max-width: 1200px) {
@@ -25,6 +25,7 @@ $background-color: #06090e;
   padding: 0;
   box-sizing: border-box;
   font-family: "Open Sans", sans-serif;
+  opacity: 1s;
 }
 body {
   width: 100%;
@@ -44,8 +45,7 @@ body {
   max-width: 1300px; 
   padding: 10px;
   height: auto;
-  border-left: 2px solid #437fb1;
-  border-right: 2px solid #437fb1;
+  border:2px solid #437fb1;
   border-radius: 10px 10px 0px 0px;
   box-shadow: 53px 100px 80px rgba(255, 255, 255, 0.096);
   position: relative;
