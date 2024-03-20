@@ -3,7 +3,76 @@ import Filtres from "./Filtres";
 import Task from "./Task";
 
 const Data:any = [
- 
+  {
+    Name: "Сделать уроки",
+    DataCration: "17.03.2024",
+    Priority: "Low",
+    Mark: ["Study"],
+    Description: "Подробное описание задачи",
+  },
+  {
+    Name: "Сделать уроки",
+    DataCration: "17.03.2024",
+    Priority: "Low",
+    Mark: ["Study"],
+    Description: "Подробное описание задачи",
+  },
+  {
+    Name: "Сделать уроки",
+    DataCration: "17.03.2024",
+    Priority: "Low",
+    Mark: ["Study"],
+    Description: "Подробное описание задачи",
+  },
+  {
+    Name: "Сделать уроки",
+    DataCration: "17.03.2024",
+    Priority: "Low",
+    Mark: ["Study"],
+    Description: "Подробное описание задачи",
+  },
+  {
+    Name: "Сделать уроки",
+    DataCration: "17.03.2024",
+    Priority: "Low",
+    Mark: ["Study"],
+    Description: "Подробное описание задачи",
+  },
+  {
+    Name: "Сделать уроки",
+    DataCration: "17.03.2024",
+    Priority: "Low",
+    Mark: ["Study"],
+    Description: "Подробное описание задачи",
+  },
+  {
+    Name: "Сделать уроки",
+    DataCration: "17.03.2024",
+    Priority: "Low",
+    Mark: ["Study"],
+    Description: "Подробное описание задачи",
+  },
+  {
+    Name: "Сделать уроки",
+    DataCration: "17.03.2024",
+    Priority: "Low",
+    Mark: ["Study"],
+    Description: "Подробное описание задачи",
+  },
+  {
+    Name: "Сделать уроки",
+    DataCration: "17.03.2024",
+    Priority: "Low",
+    Mark: ["Study"],
+    Description: "Подробное описание задачи",
+  },
+  {
+    Name: "Сделать уроки",
+    DataCration: "17.03.2024",
+    Priority: "Low",
+    Mark: ["Study"],
+    Description: "Подробное описание задачи",
+  },
 ];
 
 function Main(props: { handleBurgerClick: () => void; isRotated: boolean }) {
