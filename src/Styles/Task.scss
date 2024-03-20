@@ -1,5 +1,6 @@
 .Task {
   width: 100%;
+  text-decoration: none;
   height: 160px;
   background-color: #152a3d;
   margin-bottom: 3%;
@@ -90,7 +91,6 @@
 }
 
 @media screen and (min-width: 360px) and (max-width: 768px) {
-
   .Task {
     -webkit-tap-highlight-color: transparent;
     height: 250px;
@@ -114,24 +114,24 @@
 }
 
 @media screen and (max-width: 360px) {
-    .Task {
-        -webkit-tap-highlight-color: transparent;
-        height: 250px;
-        &__Info {
-          padding-left: 10px;
-          h1 {
-            font-size: 24px;
-          }
-          p {
-            font-size: 20px;
-          }
-        }
-        &__Buttons {
-          button {
-            width: 110px;
-            height: 60px;
-            font-size: 15px;
-          }
-        }
+  .Task {
+    -webkit-tap-highlight-color: transparent;
+    height: 250px;
+    &__Info {
+      padding-left: 10px;
+      h1 {
+        font-size: 24px;
       }
+      p {
+        font-size: 20px;
+      }
+    }
+    &__Buttons {
+      button {
+        width: 110px;
+        height: 60px;
+        font-size: 15px;
+      }
+    }
+  }
 }

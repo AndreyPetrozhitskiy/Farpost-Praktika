@@ -1,6 +1,6 @@
 
 import '../Styles/header.scss'
-function Header(props: { handleBurgerClick: () => void, burgerIcon: string, userIcon: string, isRotated: boolean }) {
+function Header(props: { handleBurgerClick: () => void, burgerIcon: string,  isRotated: boolean }) {
   return (
     <div className="Header">
       <h1>Task planner</h1>
@@ -12,7 +12,6 @@ function Header(props: { handleBurgerClick: () => void, burgerIcon: string, user
           className={props.isRotated ? 'rotated' : ''}
           onClick={props.handleBurgerClick}
         />
-        <img src={props.userIcon} />
       </div>
     </div>
   );

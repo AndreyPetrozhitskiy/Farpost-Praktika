@@ -34,21 +34,25 @@ body {
   justify-content: center;
 }
 #root {
-  width: 100%; /* Заставляет #root занимать всю ширину окна браузера */
+  width: 100%; 
   display: flex;
   justify-content: center;
 }
 .App {
-  width: 100%; /* Ширина по умолчанию - 100% от ширины родительского элемента */
-  min-width: 320px; /* Минимальная ширина, чтобы контент не сжимался слишком сильно */
-  max-width: 1300px; /* Максимальная ширина элемента */
+  width: 100%; 
+  min-width: 320px; 
+  max-width: 1300px; 
   padding: 10px;
   height: auto;
-  border-left: 1px solid white;
-  border-right: 1px solid white;
+  border-left: 2px solid #437fb1;
+  border-right: 2px solid #437fb1;
   border-radius: 10px 10px 0px 0px;
   box-shadow: 53px 100px 80px rgba(255, 255, 255, 0.096);
   position: relative;
+  display: flex;
+  flex-direction: column;
+ align-items: center;
+
 }
 
 @media screen and (min-width: 1301px) {

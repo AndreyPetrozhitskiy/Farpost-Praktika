@@ -1,8 +1,9 @@
 import AppRouter from "./AppRouter";
 import Header from "./components/Header";
-import  { useState } from 'react';
-import user from "./Image/user_icon.png";
+import { useState } from "react";
 import burger from "./Image/burger_menu_icon.png";
+import Auth from "./components/Auth";
+import View from "./components/View";
 function App() {
   const [isRotated, setIsRotated] = useState<boolean>(false);
   const [leftValue, setLeftValue] = useState<string>("-900px");
@@ -15,19 +16,20 @@ function App() {
     if (filtersElement) {
       filtersElement.style.transition = "left 0.3s ease";
       filtersElement.style.left = newLeftValue;
-    }
+    } 
+    
   };
   return (
     <div className="App">
       <Header
         handleBurgerClick={handleBurgerClick}
         burgerIcon={burger}
-        userIcon={user}
         isRotated={isRotated}
       />
+      {/* <Auth /> */}
+     
       <AppRouter  handleBurgerClick={handleBurgerClick}
         burgerIcon={burger}
-        userIcon={user}
         isRotated={isRotated} />
     </div>
   );

@@ -1,8 +1,12 @@
 import "../Styles/Filtres.scss";
 function Filtres(props: { handleBurgerClick: () => void }) {
-    const Data = ["Development","Task","Houme","Food","Development","Task","Houme","Food"]
+    const Data = ["Development","Task","Home","Food","Development","Task","Home","Food"]
   return (
     <div className="Filtres">
+      <div className="Filtres__profile">
+        <p >NAME</p>
+        <input type='button' value="Выйти" />
+      </div>
       <button onClick={props.handleBurgerClick}>ПРИМЕНИТЬ</button>
       <div className="Filtres__time">
         <p>СОРТИРОВКА</p>
@@ -39,7 +43,7 @@ function Filtres(props: { handleBurgerClick: () => void }) {
       </div>
       <div className="Filtres__category">
       <div className="Filtres__category-priority">
-          <p>Отметки</p>
+          <p>ОТМЕТКИ</p>
         {Data.map((Mark, itemIndex) => (
             <div className="Filtres__time-checkbox"  key={itemIndex}>
             <input type="checkbox" />
