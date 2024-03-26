@@ -1,17 +1,23 @@
-import { useParams, useLocation } from "react-router-dom";
+import {  useLocation } from "react-router-dom";
 import "../Styles/Edit.scss";
-
-import Dropdown from "../ui components/Dropdown";
+import { motion } from "framer-motion";
+import Dropdown1 from "../ui components/Dropdown";
 
 function Edit() {
-  const { id } = useParams<{ id: string }>();
   const location = useLocation();
   const { state } = location;
-  const { Name, Date, Priority, Mark, Description } = state || {};
+  const { Name,
+    //  Date,
+     Priority, Mark, Description } = state || {};
 
   return (
-    <div className="Edit">
-      <h1>Просмотр</h1>
+    <motion.div
+      className="Edit"
+      style={{ marginLeft: "-150px" }}
+      transition={{ ease: "easeInOut", duration: 0.5 }}
+      animate={{ x: 75 }}
+    >
+      <h1>Редактирование</h1>
       <div className="Edit__buttons">
         <button>Сохранить</button>
         <button>Удалить</button>
@@ -27,11 +33,11 @@ function Edit() {
         </div>
         <div className="Edit__container-text">
           <h1>ПРИОРИТЕТ:</h1>
-          <Dropdown Data={Priority} />
+          <Dropdown1 Data={Priority} />
         </div>
         <div className="Edit__container-text">
           <h1>ОТМЕТКИ:</h1>
-          <Dropdown Data={Mark} />
+          <Dropdown1 Data={Mark} />
         </div>
         <div className="Edit__container-text">
           <h1>ОПИСАНИЕ:</h1>
@@ -41,7 +47,7 @@ function Edit() {
           />
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 }
 

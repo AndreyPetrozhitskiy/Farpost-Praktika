@@ -19,12 +19,14 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 130px;
+    height: auto;
     justify-content: space-between;
     input {
       width: 70%;
       height: 50px;
       border: 1px solid #ffffff40;
+      margin-bottom: 1%;
+      margin-top: 1%;
       border-radius: 10px;
       background-color: #ffffff00;
       font-size: 28px;
@@ -52,8 +54,12 @@
       border-radius: 10px;
       font-size: 34px;
       border: none;
-      cursor: pointer;
-    }
+      cursor: pointer !important;
+    } 
+    input[type="submit"] {
+     
+      cursor: pointer !important;
+    } 
     p {
       font-size: 24px;
       color: #ffffff60;
@@ -121,10 +127,10 @@
     &__buttons {
       input[type="button"] {
         width: 60%;
-        font-size: 30px;
+        font-size: 21px;
       }
       p {
-        font-size: 28px;
+        font-size: 23px;
       }
     }
   }
@@ -145,10 +151,10 @@
     &__buttons {
       input[type="button"] {
         width: 60%;
-        font-size: 25px;
+        font-size: 18px;
       }
       p {
-        font-size: 22px;
+        font-size: 20px;
       }
     }
   }

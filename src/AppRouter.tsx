@@ -3,7 +3,6 @@ import Main from "./components/Main";
 import View from "./components/View";
 import Edit from "./components/Edit";
 import New from "./components/New";
-
 const AppRouter = (props: {
   handleBurgerClick: () => void;
   burgerIcon: string;
@@ -20,24 +19,9 @@ const AppRouter = (props: {
           />
         }
       />
-      <Route
-        path="/view/:id"
-        element={
-          <View/>
-        }
-      />
-      <Route
-        path="/edit/:id"
-        element={
-          <Edit/>
-        }
-      />
-      <Route
-        path="/new/"
-        element={
-          <New/>
-        }
-      />
+      <Route path="/view/:id" element={<View />} />
+      <Route path="/edit/:id" element={<Edit />} />
+      <Route path="/new/" element={<New />} />
     </Routes>
   );
 };
