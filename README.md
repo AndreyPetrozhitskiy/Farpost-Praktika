@@ -2,7 +2,7 @@
 <h3 id="description">Выполнил Петрожицкий Андрей. Колледж IT-HUB группа IT-СИП-22-ВЕБ</h3>
 <h2 align="center">Скриншот</h2>
 <br/>
-<img src="https://i.postimg.cc/qMvBy2JR/2024-03-29-14-43-01.png" alt="project-screenshot" width="400" height="400/">
+<img align="center" src="https://i.postimg.cc/qMvBy2JR/2024-03-29-14-43-01.png" alt="project-screenshot" width="400" height="400/">
 <br/>
 <br/>
 <h1>🧐 Stack</h1>
