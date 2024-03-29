@@ -1,5 +1,11 @@
 <h1 align="center" id="title">Практика Farpost</h1>
 <h3 id="description">Выполнил Петрожицкий Андрей. Колледж IT-HUB группа IT-СИП-22-ВЕБ</h3>
+<h2 align="center">Demo</h2>
+<br/>
+<a href="http://www.farpost-front.com.website.yandexcloud.net/">
+  http://www.farpost-front.com.website.yandexcloud.net/</a>
+<br/>
+<br/>
 <h2 align="center">Скриншот</h2>
 <br/>
 <img align="center" src="https://i.postimg.cc/qMvBy2JR/2024-03-29-14-43-01.png" alt="project-screenshot" width="400" height="400/">
