@@ -1,5 +1,5 @@
 const jwt = require("jsonwebtoken");
-const db = require("../DataBase/DataBase.js");
+const db = require("../Database/DataBase.js");
 const fs = require("fs");
 const path = require("path");
 const cipherData = fs.readFileSync(path.join(__dirname, "../key.json"));
