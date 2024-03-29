@@ -1,5 +1,5 @@
 const jwt = require("jsonwebtoken");
-const db = require("../DataBase/DataBase.js");
+const db = require("../Database/DataBase.js");
 const { validationResult } = require("express-validator");
 const cryptoScripts = require("../cryptoScripts.js");
 const fs = require("fs");
