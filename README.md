@@ -23,7 +23,7 @@
 <br/>
 <h1>Установка и запуск</h1>
 
-git clone https://github.com/AndreyPetrozhitskiy/Farpost-Praktika.git
+`git clone https://github.com/AndreyPetrozhitskiy/Farpost-Praktika.git`
 
 
 
