@@ -1,0 +1,87 @@
+.ModalDelete {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.288);
+  z-index: 5;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  &__container {
+    width: 500px;
+    height: 200px;
+    border: 2px solid rgba(255, 255, 255, 0.2509803922);
+    display: flex;
+    flex-direction: row;
+    background-color: black;
+    flex-wrap: wrap;
+    border-radius: 10px;
+    justify-content: center;
+    gap: 5%;
+    padding: 10px;
+    h1 {
+      width: 100% !important;
+      color: white;
+      font-size: 25px !important;
+    }
+    button {
+      width: 45%;
+      height: 25%;
+      cursor: pointer;
+      border-radius: 10px;
+      background-color: rgba(17, 17, 17, 0);
+      border: 1px solid rgba(255, 255, 255, 0.404);
+      color: white;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1000px) {
+    .ModalDelete {
+        width: 100vw;
+        height: 100vh;
+        position: absolute;
+        background-color: rgba(0, 0, 0, 0.288);
+        z-index: 5;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+      
+        &__container {
+          width: 500px;
+          height: 200px;
+          border: 2px solid rgba(255, 255, 255, 0.2509803922);
+          display: flex;
+          flex-direction: row;
+          background-color: black;
+          flex-wrap: wrap;
+          border-radius: 10px;
+          justify-content: center;
+          gap: 5%;
+          padding: 10px;
+          h1 {
+            width: 100% !important;
+            color: white;
+            font-size: 25px !important;
+          }
+          button {
+            width: 45%;
+            height: 25%;
+            cursor: pointer;
+            border-radius: 10px;
+            background-color: rgba(17, 17, 17, 0);
+            border: 1px solid rgba(255, 255, 255, 0.404);
+            color: white;
+          }
+        }
+      }
+}
+
+@media screen and (min-width: 360px) and (max-width: 768px) {
+}
+
+@media screen and (max-width: 360px) {
+}

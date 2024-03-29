@@ -1,0 +1,117 @@
+.DropdownTags {
+  width: 200px;
+  min-height: 120px;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  transition: all 0.3s ease; // Улучшение для плавности
+  flex-wrap: wrap;
+  position: relative;
+  z-index: 1;
+  cursor: pointer;
+
+  &__start {
+    border: 1px solid rgba(255, 255, 255, 0.404);
+    border-radius: 10px;
+    background-color: #11111100;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    p {
+      font-size: 20px;
+      color: white;
+      transition: color 0.3s ease; // Плавность изменения цвета
+    }
+
+    img {
+      cursor: pointer;
+      transition: transform 0.3s ease; // Плавное вращение или изменение
+    }
+  }
+
+  &__list {
+    top: 0px;
+    width: 100%;
+    border: 1px solid rgba(255, 255, 255, 0.404);
+    border-radius: 10px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 3%;
+    padding: 10px;
+    &-checkbox {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-bottom: 5%;
+        gap: 5%;
+        input[type="checkbox"] {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            vertical-align: middle;
+            border: 2px solid #ffffff;
+            appearance: none;
+            -webkit-appearance: none;
+            outline: none;
+            cursor: pointer;
+            position: relative;
+            &:checked {
+              // background-color: #ffffff;
+              &::before {
+                content: "\2714"; /* код символа галочки */
+                display: block;
+                width: 30px;
+                height: 30px;
+                text-align: center;
+                line-height: 30px;
+                font-size: 28px;
+                color: #437fb1; /* черный цвет галочки */
+                border-radius: 50%;
+                background-color: #ffffff;
+                position: absolute; // Добавляем позиционирование
+                top: 50%;
+                left: 50%;
+                transform: translate(
+                  -50%,
+                  -50%
+                ); // Центрируем по вертикали и горизонтали
+              }
+            }
+          }
+        p {
+            width: auto;
+            margin-top: 2%;
+            margin-bottom: 2%;
+            font-size: 20px;
+            color: rgb(255, 255, 255);
+            cursor: pointer;
+            transition: all 0.3s ease; // Плавное изменение фона и масштаба
+          }
+        
+    }
+    
+  }
+}
+
+@media screen and (min-width: 360px) and (max-width: 768px) {
+  .DropdownTags {
+    -webkit-tap-highlight-color: transparent;
+  }
+}
+@media screen and (max-width: 360px) {
+  .DropdownTags {
+    width: 200px;
+    min-height: 50px;
+    -webkit-tap-highlight-color: transparent;
+  }
+}
