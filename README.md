@@ -1,4 +1,4 @@
-<h1 align="center" id="title">Практика Farpost (параша)</h1>
+<h1 align="center" id="title">Практика Farpost </h1>
 <h3 id="description">Выполнил Петрожицкий Андрей. Колледж IT-HUB группа IT-СИП-22-ВЕБ</h3>
 <h2 align="center">Demo</h2>
 <br/>
